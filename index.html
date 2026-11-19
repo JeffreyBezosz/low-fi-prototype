@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Klikbaar prototype voor begrijpend lezen, met schermen voor leerlingen, leerkrachten en ouders.">
+  <title>Leesprototype</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="opdrachten.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="prototype-bar">
+    <span class="prototype-label">Leesprototype</span>
+    <nav class="role-nav" aria-label="Kies een rol">
+      <a href="#leerling" data-role="leerling">Leerling</a>
+      <a href="#leerkracht" data-role="leerkracht">Leerkracht</a>
+      <a href="#ouder" data-role="ouder">Ouder</a>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <dialog id="modal" aria-labelledby="dialog-title"></dialog>
+  <noscript>Schakel JavaScript in om het prototype te gebruiken.</noscript>
+</body>
+</html>
